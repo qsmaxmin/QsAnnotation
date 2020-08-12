@@ -1,0 +1,16 @@
+apply plugin: 'java-library'
+apply plugin: 'maven'
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        def deployPath = file(getProperty('aar.deployPath'))
+        repository(url: "file://${deployPath.absolutePath}")
+        pom.groupId = "com.qsmaxmin.annotation"
+        pom.artifactId = "QsAnnotation"
+        pom.version = "9.9.9"
+    }
+}
