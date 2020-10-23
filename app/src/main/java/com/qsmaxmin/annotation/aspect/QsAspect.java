@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 /**
  * @CreateBy qsmaxmin
  * @Date 2020/10/23 14:11
- * @Description enable aspect
+ * @Description register custom aspect
  */
 @Documented
 @Target(ElementType.METHOD)
