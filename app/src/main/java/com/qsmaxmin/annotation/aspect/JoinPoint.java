@@ -9,10 +9,12 @@ public interface JoinPoint {
     /**
      * 执行原方法
      */
-    void proceed();
+    Object proceed();
 
     /**
      * 获取持有该方法的对象主体
+     *
+     * @return 如果被QsAspect注解的方法是静态的，则返回null
      */
     Object getTarget();
 }

@@ -6,5 +6,5 @@ package com.qsmaxmin.annotation.aspect;
  * @Description 自定义aspect代码, 实现类必须保留一个空参的构造
  */
 public interface QsIAspect {
-    void around(JoinPoint point);
+    Object around(JoinPoint point);
 }
