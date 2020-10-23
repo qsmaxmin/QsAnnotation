@@ -1,4 +1,4 @@
-package com.qsmaxmin.annotation.custom;
+package com.qsmaxmin.annotation.aspect;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

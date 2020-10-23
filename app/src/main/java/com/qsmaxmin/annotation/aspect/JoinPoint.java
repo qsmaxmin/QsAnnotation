@@ -1,4 +1,4 @@
-package com.qsmaxmin.annotation.custom;
+package com.qsmaxmin.annotation.aspect;
 
 /**
  * @CreateBy qsmaxmin
