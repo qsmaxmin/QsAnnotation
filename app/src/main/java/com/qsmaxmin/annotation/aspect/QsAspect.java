@@ -15,5 +15,15 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.CLASS)
 public @interface QsAspect {
+    /**
+     * 设置AOP实现类
+     */
     Class<? extends QsIAspect> value();
+
+    /**
+     * 自定义tag
+     *
+     * @see JoinPoint#getTag()
+     */
+    String tag() default "";
 }
