@@ -18,4 +18,6 @@ public @interface Permission {
     boolean forceGoOn() default false;
 
     boolean showToastWhenReject() default false;
+
+    String toastText() default "未打开相应权限";
 }
